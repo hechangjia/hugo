@@ -12,12 +12,36 @@
     
     <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
     
-    <lastBuildDate>Sat, 21 Jun 2025 16:47:11 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 21 Jun 2025 18:34:19 +0800</lastBuildDate>
     
     
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
+    
+      
+    
+
+    <item>
+      <title>测试文档</title>
+      <link>http://localhost:1313/post/demo/</link>
+      <pubDate>Sat, 21 Jun 2025 18:34:19 &#43;0800</pubDate>
+      <author>2136414704@qq.com (贺昌嘉)</author>
+      <guid>http://localhost:1313/post/demo/</guid>
+      <description>
+        <![CDATA[<h1>测试文档</h1><p>作者：贺昌嘉（2136414704@qq.com）</p>
+        
+          <h1 id="数学">
+<a class="header-anchor" href="#%e6%95%b0%e5%ad%a6"></a>
+数学
+</h1>$$
+\int_a^bf(x)dx
+$$
+        
+        <hr><p>本文2025-06-21首发于<a href='http://localhost:1313/'>小镇错题家-中国式的西西弗斯</a>，最后修改于2025-06-21</p><p>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</p>]]>
+      </description>
+      
+    </item>
     
       
     

@@ -276,7 +276,7 @@ comment:
     zh-CN: 说些什么吧！
     zh-TW: 說些什麼吧！
     ja: コメントを残す
-  default: waline # default comment system, when you enable multiple comment systems
+  default: giscus # default comment system, when you enable multiple comment systems
 
 # valine comment system. https://valine.js.org
 # version 1.5.1
@@ -336,19 +336,33 @@ gitalk:
   md5: false
 
 # https://giscus.app/zh-CN
-giscus:
-  enable: true
-  repo: "hechangjia/hugo"
-  repoId: "R_kgDOO_Zoyg"
-  category: "Announcements"
-  categoryId: "DIC_kwDOO_Zoys4CrzeX"
-  mapping: pathname
-  strict: 0
-  reactionsEnabled: 1
-  emitMetadata: 1
-  inputPosition: top 
-  commentTheme: "light_protanopia"
-  lang: zh-CN # deprecated, use html.lang instead
+# giscus:
+#   enable: true
+#   repo: "hechangjia/hugo"
+#   repoId: "R_kgDOO_Zoyg"
+#   category: "Announcements"
+#   categoryId: "DIC_kwDOO_Zoys4CrzeX"
+#   mapping: "pathname"
+#   strict: 0
+#   reactionsEnabled: 1
+#   emitMetadata: 1
+#   inputPosition: top 
+#   commentTheme: "light_protanopia"
+#   html.lang: zh-CN # deprecated, use html.lang instead
+
+# giscus:
+#   enable: true
+#   repo: "hechangjia/hugo"
+#   repoId: "R_kgDOO_Zoyg"
+#   category: "Announcements"
+#   categoryId: "DIC_kwDOO_Zoys4CrzeX"
+#   mapping: "pathname"  # Changed from "mapping" to "pathname"
+#   strict: 0
+#   reactionsEnabled: 1
+#   emitMetadata: 1  # Changed from 0 to 1 to match Giscus script
+#   inputPosition: "bottom"
+#   theme: "light"  # Uncommented
+#   lang: "zh-CN"  # Uncommented
 
 ########################################
 # Search

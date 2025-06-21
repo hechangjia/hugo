@@ -21,3 +21,4 @@ noClasses = false
 enable = true
 delimiters.block = [["\\[", "\\]"], ["$$", "$$"]]
 delimiters.inline = [["\\(", "\\)"], ["$", "$"]]
+

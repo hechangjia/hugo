@@ -124,8 +124,16 @@
 }
 
 @if $giscus {
-  .giscus-comment {
+  .giscus {
     width: auto;
+    
+    // Additional styling for better integration
+    margin-top: 2rem;
+    
+    // You can add more specific styling for other Giscus elements if needed
+    .giscus-frame {
+      width: 100% !important;
+    }
   }
 }
 
