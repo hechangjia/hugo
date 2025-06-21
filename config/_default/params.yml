@@ -335,7 +335,6 @@ gitalk:
   admin:
   md5: false
 
-# https://giscus.app/zh-CN
 giscus:
   enable: true
   repo: "hechangjia/hugo"
@@ -345,9 +344,9 @@ giscus:
   mapping: pathname
   strict: 0
   reactionsEnabled: 1
-  emitMetadata: 0
+  emitMetadata: 1  # Changed from 0 to 1 to match the official script
   inputPosition: bottom
-  commentTheme: "light_protanopia"
+  commentTheme: "light_protanopia"  # Note: this might be "theme" in some Hugo themes
   lang: zh-CN # deprecated, use html.lang instead
 
 ########################################
