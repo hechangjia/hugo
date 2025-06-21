@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>小镇错题家-中国式的西西弗斯</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content from 小镇错题家-中国式的西西弗斯</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    
+    <managingEditor>2136414704@qq.com (贺昌嘉)</managingEditor>
+    <webMaster>2136414704@qq.com (贺昌嘉)</webMaster>
+    
+    <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
+    
+    <lastBuildDate>Sat, 21 Jun 2025 16:47:11 +0800</lastBuildDate>
+    
+    
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+      
+    
+
+    <item>
+      <title>Hello World</title>
+      <link>http://localhost:1313/post/hello/</link>
+      <pubDate>Sat, 21 Jun 2025 16:46:15 &#43;0800</pubDate>
+      <author>2136414704@qq.com (贺昌嘉)</author>
+      <guid>http://localhost:1313/post/hello/</guid>
+      <description>
+        <![CDATA[<h1>Hello World</h1><p>作者：贺昌嘉（2136414704@qq.com）</p>
+        
+          <p>💘 你好,Hugo 世界! 💘</p>
+        
+        <hr><p>本文2025-06-21首发于<a href='http://localhost:1313/'>小镇错题家-中国式的西西弗斯</a>，最后修改于2025-06-21</p><p>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</p>]]>
+      </description>
+      
+    </item>
+    
+      
+    
+
+    <item>
+      <title>资料整理</title>
+      <link>http://localhost:1313/post/%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/</link>
+      <pubDate>Sat, 21 Jun 2025 16:42:06 &#43;0800</pubDate>
+      <author>2136414704@qq.com (贺昌嘉)</author>
+      <guid>http://localhost:1313/post/%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/</guid>
+      <description>
+        <![CDATA[<h1>资料整理</h1><p>作者：贺昌嘉（2136414704@qq.com）</p>
+        
+          <ol>
+<li><a href="https://www.deeplearningbook.org/">Deep Learning</a></li>
+<li><a href="https://jeanwalrand.github.io/PeecsJB/intro.html">Welcome — Probability in EECS</a></li>
+<li><a href="https://mml-book.github.io/">Mathematics for Machine Learning | Companion webpage to the book “Mathematics for Machine Learning”. Copyright 2020 by Marc Peter Deisenroth, A. Aldo Faisal, and Cheng Soon Ong. Published by Cambridge University Press.</a></li>
+<li><a href="https://zh.d2l.ai/">《动手学深度学习》 — 动手学深度学习 2.0.0 documentation</a></li>
+<li><a href="https://docker-curriculum.com/">A Docker Tutorial for Beginners</a></li>
+<li><a href="https://data140.org/">Home | Data 140: Probability for Data Science</a></li>
+<li><a href="https://wsdjeg.net/vim-galore-zh-cn/">Vim 从入门到精通</a></li>
+<li><a href="https://wsdjeg.net/wiki/learn-vim/">Learn-Vim(the Smart Way) 中文翻译</a></li>
+<li><a href="https://bingohuang.gitbooks.io/progit2/content/">Pro Git 第二版 简体中文</a></li>
+<li><a href="https://learngitbranching.js.org/?locale=zh_CN">Learn Git Branching中文版</a></li>
+<li><a href="https://nqdeng.github.io/7-days-nodejs/">七天学会NodeJS</a></li>
+<li><a href="https://python3-cookbook.readthedocs.io/zh-cn/latest/">Python Cookbook 3rd Edition Documentation — python3-cookbook 3.0.0 文档</a></li>
+<li><a href="https://pythonguidecn.readthedocs.io/zh/latest/">Python最佳实践指南！ — The Hitchhiker&rsquo;s Guide to Python</a></li>
+<li><a href="https://cyc2018.xyz/">CS-Notes 面试笔记</a></li>
+<li><a href="https://marklodato.github.io/visual-git-guide/index-zh-cn.html">图解Git</a></li>
+<li><a href="https://rogerdudler.github.io/git-guide/index.zh.html">git - the simple guide - no deep shit!</a></li>
+<li><a href="https://hansimov.gitbook.io/csapp"> 深入理解计算机系统（CSAPP）</a></li>
+<li><a href="https://tingsongyu.github.io/PyTorch-Tutorial-2nd/">简介 · PyTorch实用教程（第二版）</a></li>
+<li><a href="https://vuepress.mirror.docker-practice.com/">Docker — 从入门到实践 | Docker 从入门到实践</a></li>
+<li><a href="https://python3-cookbook.readthedocs.io/zh-cn/latest/preface.html">前言 — python3-cookbook 3.0.0 文档</a></li>
+<li><a href="https://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html">常用 Git 命令清单 - 阮一峰的网络日志</a></li>
+<li><a href="https://gy23333.github.io/2020/03/16/%E3%80%8A%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E6%96%B9%E6%B3%95%E3%80%8B%E7%AC%94%E8%AE%B0/">《计算机网络-自顶向下方法》笔记 | GuoYi的博客</a></li>
+<li><a href="https://linuxtools-rst.readthedocs.io/zh-cn/latest/">Linux工具快速教程 — Linux Tools Quick Tutorial</a></li>
+<li><a href="https://wildlyinaccurate.com/a-hackers-guide-to-git/">A Hacker&rsquo;s Guide to Git | Wildly Inaccurate</a></li>
+<li><a href="https://linuxjourney.com/">Home | Linux Journey</a></li>
+</ol>
+        
+        <hr><p>本文2025-06-21首发于<a href='http://localhost:1313/'>小镇错题家-中国式的西西弗斯</a>，最后修改于2025-06-21</p><p>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</p>]]>
+      </description>
+      
+    </item>
+    
+  </channel>
+</rss>

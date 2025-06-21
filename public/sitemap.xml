@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/archives/</loc>
+    <lastmod>2025-06-21T16:51:50+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-06-21T16:51:50+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/friend/</loc>
+    <lastmod>2025-06-21T16:51:35+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2025-06-21T16:50:48+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/hello/</loc>
+    <lastmod>2025-06-21T16:47:11+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/</loc>
+    <lastmod>2025-06-21T16:42:06+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+  </url>
+</urlset>
