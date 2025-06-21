@@ -338,17 +338,17 @@ gitalk:
 # https://giscus.app/zh-CN
 giscus:
   enable: true
-  repo:
-  repoId:
-  category:
-  categoryId:
-  mapping: mapping
+  repo: "hechangjia/hugo"
+  repoId: "R_kgDOO_Zoyg"
+  category: "Announcements"
+  categoryId: "DIC_kwDOO_Zoys4CrzeX"
+  mapping: pathname
   strict: 0
   reactionsEnabled: 1
   emitMetadata: 0
   inputPosition: bottom
-  # commentTheme: preferred_color_scheme invalid
-  # lang: zh-CN # deprecated, use html.lang instead
+  commentTheme: "light_protanopia"
+  lang: zh-CN # deprecated, use html.lang instead
 
 ########################################
 # Search
