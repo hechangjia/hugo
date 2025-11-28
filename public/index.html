@@ -11,10 +11,7 @@
 /><title>
   小镇错题家-中国式的西西弗斯
 </title>
-<meta
-  name="description"
-  content="擅长于感受,却拙于表达"
-/>
+<meta name="description" content="擅长于感受,却拙于表达"/>
 <script src="https://www.googletagmanager.com/gtag/js?id=true"></script>
 <script data-pjax>
   window.dataLayer = window.dataLayer || [];
@@ -28,7 +25,7 @@
   gtag('config', 'true');
 </script>
 <script>
-  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"http://localhost:1313/\",\"clipboard\":{\"copyright\":{\"count\":50,\"enable\":false,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"expand\":true},\"icon_font\":false,\"outdate\":{\"daysago\":180,\"enable\":false,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"}}}");
+  window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"http://localhost:1313/\",\"clipboard\":{\"copyright\":{\"count\":50,\"enable\":false,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"pt-br\":\"Falha ao copiar (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"pt-br\":\"Copiado com sucesso (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"expand\":true},\"icon_font\":false,\"outdate\":{\"daysago\":180,\"enable\":false,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"pt-br\":\"Este artigo foi atualizado pela última vez em {time}. Observe que o conteúdo pode não ser mais aplicável.\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"}}}");
   
 </script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -115,19 +112,23 @@
   </div>
   <script>
     var time = null;
+    var loaderEl = document.getElementById('loader');
     var startLoading = () => {
       time = Date.now();
-      document.getElementById('loader').classList.remove("loading");
+      loaderEl.classList.remove("loading");
     }
+    var hideLoader = () => {
+      document.body.style.overflow = 'auto';
+      loader.classList.add('loading');
+    };
+
     var endLoading = () => {
       if (!time) {
-        document.body.style.overflow = 'auto';
-        document.getElementById('loader').classList.add("loading");
+        hideLoader();
       } else {
         if (Date.now() - time > 500) {
           time = null;
-          document.body.style.overflow = 'auto';
-          document.getElementById('loader').classList.add("loading");
+          hideLoader();
         } else {
           setTimeout(endLoading, 500 - (Date.now() - time));
           time = null;
@@ -135,36 +136,37 @@
       }
     }
     window.addEventListener('DOMContentLoaded', endLoading);
-    document.getElementById('loader').addEventListener('click', endLoading);
-  </script><div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
-</div>
-<div id="lang-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+    loaderEl.addEventListener('click', endLoading);
+  </script><div id="copy-tooltip"></div>
+<div id="lang-tooltip">
 本文章没有找到对应的语言版本
-</div><div id="container">
+</div>
+<div id="heatmap-tooltip"></div><div id="container">
       <div id="wrap"><div id="header-nav">
-  <nav id="main-nav"><span class="main-nav-link-wrap">
+  <nav id="main-nav" aria-label="Primary navigation"><a class="main-nav-link-wrap" href="/">
         <div class='main-nav-icon icon rotate'>&#xf6ad;</div>
-        <a class="main-nav-link" href="/">首页</a>
-      </span><span class="main-nav-link-wrap">
+        <span class="main-nav-link">首页</span>
+      </a><a class="main-nav-link-wrap" href="/archives">
         <div class='main-nav-icon icon rotate'>&#xf6ad;</div>
-        <a class="main-nav-link" href="/archives">归档</a>
-      </span><span class="main-nav-link-wrap">
+        <span class="main-nav-link">归档</span>
+      </a><a class="main-nav-link-wrap" href="/about">
         <div class='main-nav-icon icon rotate'>&#xf6ad;</div>
-        <a class="main-nav-link" href="/about">关于</a>
-      </span><span class="main-nav-link-wrap">
+        <span class="main-nav-link">关于</span>
+      </a><a class="main-nav-link-wrap" href="/friend">
         <div class='main-nav-icon icon rotate'>&#xf6ad;</div>
-        <a class="main-nav-link" href="/friend">友链</a>
-      </span><a id="main-nav-toggle" class="nav-icon"></a>
+        <span class="main-nav-link">友链</span>
+      </a><a id="main-nav-toggle" class="nav-icon" aria-label="Toggle navigation" role="button"></a>
   </nav>
-  <nav id="sub-nav"><a id="nav-rss-link" class="nav-icon" href="/index.xml" title="RSS 订阅" target="_blank"></a></nav></div>
-<header id="header"><picture></picture><img  fetchpriority="high" src="/images/background.jpg" alt="小镇错题家-中国式的西西弗斯"><div id="header-outer">
-    <div id="header-title"><a href="/" id="logo">
+  <nav id="sub-nav" aria-label="Secondary navigation"><a id="nav-rss-link" class="nav-icon" href="/index.xml" title="RSS 订阅" aria-label="RSS 订阅" target="_blank"></a></nav></div>
+<header id="header" aria-label="Site header"><picture></picture><img  fetchpriority="high" src="/images/background.jpg" alt="小镇错题家-中国式的西西弗斯"><div id="header-outer">
+    <div id="header-title"><span id="logo">
             <h1 data-aos="slide-up">小镇错题家-中国式的西西弗斯</h1>
-          </a><h2 id="subtitle-wrap" data-aos="slide-down"><a href="/" id="subtitle">INFP-t</a></h2></div>
+          </span><h2 id="subtitle-wrap" data-aos="slide-down"><span id="subtitle">INFP-t</span></h2></div>
   </div>
 </header><div id="content"
+          aria-label="Page content"
           
-          class="sidebar-right"  ><aside id="sidebar"><div class="sidebar-wrapper ">
+          class="sidebar-right"  ><aside id="sidebar" aria-label="Sidebar"><div class="sidebar-wrapper-container "><div class="sidebar-wrapper">
     <div
       class="sidebar-wrap"
       data-aos="fade-up"
@@ -182,16 +184,16 @@
   <div class="sidebar-state-article">
     <div>文章</div><div class="sidebar-state-number">3</div>
   </div>
-  <div class="sidebar-state-category">
+  <a class="sidebar-state-category" href="/categories/" aria-label="sidebar-state-category-link">
     <div>分类</div>
     <div class="sidebar-state-number">
       0
     </div>
-  </div>
-  <div class="sidebar-state-tag">
+  </a>
+  <a class="sidebar-state-tag" href="/tags/" aria-label="sidebar-state-tag-link">
     <div>标签</div>
     <div class="sidebar-state-number">0</div>
-  </div>
+  </a>
 </div>
 <div class="sidebar-social"><div class="icon-email sidebar-social-icon">
       <a
@@ -199,7 +201,7 @@
         itemprop="url"
         target="_blank"
         aria-label="email"
-        rel="noopener external nofollow noreferrer"
+        rel="noopener nofollow noreferrer"
       ></a>
     </div><div class="icon-github sidebar-social-icon">
       <a
@@ -207,7 +209,7 @@
         itemprop="url"
         target="_blank"
         aria-label="github"
-        rel="noopener external nofollow noreferrer"
+        rel="noopener nofollow noreferrer"
       ></a>
     </div><div class="icon-twitter sidebar-social-icon">
       <a
@@ -215,7 +217,7 @@
         itemprop="url"
         target="_blank"
         aria-label="twitter"
-        rel="noopener external nofollow noreferrer"
+        rel="noopener nofollow noreferrer"
       ></a>
     </div></div>
 <div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
@@ -252,9 +254,7 @@
       <div class="sidebar-menu-link">友链</div>
     </div></div>
 </div>
-  </div>
-
-  <div class="sidebar-widget"><div class="widget-wrapper">
+  </div><div class="sidebar-widget"><div class="widget-wrapper">
     <div
       class="widget-wrap"
       data-aos="fade-up"
@@ -262,32 +262,33 @@
       <h3 class="widget-title">最新文章</h3>
       <div class="widget">
         <ul><li>
-              <a href="/post/demo/">测试文档</a>
+              <a href="/post/demo/" title="测试文档">测试文档</a>
             </li><li>
-              <a href="/post/hello/">Hello World</a>
+              <a href="/post/hello/" title="Hello World">Hello World</a>
             </li><li>
-              <a href="/post/%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/">资料整理</a>
+              <a href="/post/%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/" title="资料整理">资料整理</a>
             </li></ul>
       </div>
     </div>
-  </div></div></aside>
-<section id="main"><div class="post-wrapper">
+  </div></div></div></aside>
+<section id="main" aria-label="Main content"><div class="post-wrapper">
   <div
     class="
-      post-wrap-left
+      post-wrap left
     "
     data-aos="fade-up"
   ><a
         class="post-link"
         href="/post/demo/"
         aria-label="测试文档"
+        title="测试文档"
       >
       </a><div
       class="
-        post-cover-left
+        post-cover left
       "
     ><img
-            data-src="https://d-sketon.top/img/_backwebp/bg1.webp"
+            data-src="https://hechangjia.github.io/picx-images-hosting/Win/1716947217-167598-3.8dx4nja5sn.jpg"
             data-sizes="auto"
             alt="测试文档"
             class="lazyload"
@@ -297,8 +298,7 @@
         <span
           ><span class="icon-calendar"></span
           >2025-06-21</span
-        >
-        <span
+        ><span
           ><span class="icon-pencil"></span
           >5 字</span
         >
@@ -308,24 +308,25 @@
         >
       </div>
       <h2 class="post-title">测试文档</h2>
-      <article class="post-article">数学$$ \int_a^bf(x)dx $$</article>
+      <article class="post-article"> 数学 $$ \int_a^bf(x)dx $$</article>
     </div>
   </div>
 </div>
 <div class="post-wrapper">
   <div
     class="
-      post-wrap-right
+      post-wrap right
     "
     data-aos="fade-up"
   ><a
         class="post-link"
         href="/post/hello/"
         aria-label="Hello World"
+        title="Hello World"
       >
       </a><div
       class="
-        post-cover-right
+        post-cover right
       "
     ><img
             data-src="https://hechangjia.github.io/picx-images-hosting/Win/1716947217-167598-3.8dx4nja5sn.jpg"
@@ -338,8 +339,7 @@
         <span
           ><span class="icon-calendar"></span
           >2025-06-21</span
-        >
-        <span
+        ><span
           ><span class="icon-pencil"></span
           >12 字</span
         >
@@ -356,20 +356,21 @@
 <div class="post-wrapper">
   <div
     class="
-      post-wrap-left
+      post-wrap left
     "
     data-aos="fade-up"
   ><a
         class="post-link"
         href="/post/%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86/"
         aria-label="资料整理"
+        title="资料整理"
       >
       </a><div
       class="
-        post-cover-left
+        post-cover left
       "
     ><img
-            data-src="https://hechangjia.github.io/picx-images-hosting/Win/Manim.9o01tund1q.png"
+            data-src="https://d-sketon.top/img/_backwebp/bg1.webp"
             data-sizes="auto"
             alt="资料整理"
             class="lazyload"
@@ -379,8 +380,7 @@
         <span
           ><span class="icon-calendar"></span
           >2025-06-21</span
-        >
-        <span
+        ><span
           ><span class="icon-pencil"></span
           >313 字</span
         >
@@ -394,9 +394,9 @@
     </div>
   </div>
 </div>
-<nav id="page-nav" data-aos="fade-up"><span class="page-number current">1</span></nav>
+<nav id="page-nav" aria-label="Pagination navigation" data-aos="fade-up"><span class="page-number current">1</span></nav>
 </section>
-        </div><footer id="footer">
+        </div><footer id="footer" aria-label="Site footer">
   <div style="width: 100%; overflow: hidden">
     <div class="footer-line"></div>
   </div>
@@ -407,10 +407,12 @@
         基于&nbsp;<a
           href="https://gohugo.io/"
           target="_blank"
+          rel="noopener nofollow noreferrer"
           >Hugo</a
         >&nbsp; Theme.<a
           href="https://github.com/D-Sketon/hugo-theme-reimu"
           target="_blank"
+          rel="noopener nofollow noreferrer"
           >Reimu</a
         >
       </div><div>
@@ -439,7 +441,7 @@
             <div class="sidebar-top-taichi rotate"></div>
             <div class="arrow-up"></div>
           </div><div id="mask" class="hide"></div>
-      </div><nav id="mobile-nav">
+      </div><nav id="mobile-nav" aria-label="Mobile navigation">
   <div class="sidebar-wrap"><div class="sidebar-author">
   <img
     data-src="/avatar/Manim.png"
@@ -454,16 +456,16 @@
   <div class="sidebar-state-article">
     <div>文章</div><div class="sidebar-state-number">3</div>
   </div>
-  <div class="sidebar-state-category">
+  <a class="sidebar-state-category" href="/categories/" aria-label="sidebar-state-category-link">
     <div>分类</div>
     <div class="sidebar-state-number">
       0
     </div>
-  </div>
-  <div class="sidebar-state-tag">
+  </a>
+  <a class="sidebar-state-tag" href="/tags/" aria-label="sidebar-state-tag-link">
     <div>标签</div>
     <div class="sidebar-state-number">0</div>
-  </div>
+  </a>
 </div>
 <div class="sidebar-social"><div class="icon-email sidebar-social-icon">
       <a
@@ -471,7 +473,7 @@
         itemprop="url"
         target="_blank"
         aria-label="email"
-        rel="noopener external nofollow noreferrer"
+        rel="noopener nofollow noreferrer"
       ></a>
     </div><div class="icon-github sidebar-social-icon">
       <a
@@ -479,7 +481,7 @@
         itemprop="url"
         target="_blank"
         aria-label="github"
-        rel="noopener external nofollow noreferrer"
+        rel="noopener nofollow noreferrer"
       ></a>
     </div><div class="icon-twitter sidebar-social-icon">
       <a
@@ -487,7 +489,7 @@
         itemprop="url"
         target="_blank"
         aria-label="twitter"
-        rel="noopener external nofollow noreferrer"
+        rel="noopener nofollow noreferrer"
       ></a>
     </div></div>
 <div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
@@ -545,11 +547,13 @@
   </script><script src="/js/pjax_main.js" data-pjax></script><script
     src="https://npm.webcache.cn/mouse-firework@0.1.1/dist/index.umd.js"
     integrity="sha384-8LyaidD9GPxQQgLJO/WRw/O2h3BoNq/ApI/ecpvM6RsrCz2qP2ppBXUKihP4V/2d" crossorigin="anonymous"></script><script>
-  if (window.firework) {
-    const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"var(--red-1)\",\"var(--red-2)\",\"var(--red-3)\",\"var(--red-4)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}},{\"colors\":[\"var(--red-0)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"diffuse\"],\"number\":1,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.2,0.5],\"lineWidth\":6,\"radius\":20}}]}");
-    options.excludeElements = options.excludeelements;
-    delete options.excludeelements;
-    window.firework(options);
+  if (! false  || !window.matchMedia('(max-width: 768px)').matches) {
+    if (window.firework) {
+      const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"var(--red-1)\",\"var(--red-2)\",\"var(--red-3)\",\"var(--red-4)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}},{\"colors\":[\"var(--red-0)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"diffuse\"],\"number\":1,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.2,0.5],\"lineWidth\":6,\"radius\":20}}]}");
+      options.excludeElements = options.excludeelements;
+      delete options.excludeelements;
+      window.firework(options);
+    }
   }
 </script>
 
